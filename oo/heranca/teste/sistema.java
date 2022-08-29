@@ -49,5 +49,4 @@ public class sistema {
 		System.out.print("\n\nVelocidade atual do carro Civic : " + civic.VelocidadeAtual);
 		System.out.print("\n\nVelocidade atual do carro Ferrari : " + ferrari.VelocidadeAtual);
 	}
-
 }

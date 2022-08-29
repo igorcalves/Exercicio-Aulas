@@ -19,7 +19,6 @@ public class Jogo {
 		    
 		    monstro.atacar(heroi);
 		    heroi.atacar(monstro);
-		    
 		    monstro.atacar(heroi);
 		    heroi.atacar(monstro);
 		    monstro.andar(Direcao.NORTE);
