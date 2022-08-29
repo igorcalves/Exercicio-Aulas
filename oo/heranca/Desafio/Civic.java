@@ -1,19 +1,19 @@
 package oo.heranca.Desafio;
 
 public class Civic extends Carro {
-	Civic(int VELOCIDADE_MAXIMA){
-		super(VELOCIDADE_MAXIMA);
+	public Civic(){
+		super(212);
 		
 		
 	}
 	
-	void  acelerar() {
+	public void  acelerar() {
 		super.acelerar();
 		
 		
 	}
 
-	void Freiar() {
+	public void Freiar() {
 	 super.Freiar();
 		
 		

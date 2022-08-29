@@ -1,21 +1,25 @@
-package oo.heranca.Desafio;
+package oo.heranca.teste;
+
+import oo.heranca.Desafio.Civic;
+import oo.heranca.Desafio.Ferrari;
 
 public class sistema {
 	public static void main(String[] args) {
 		
-		Civic civic = new Civic(120);
-		Ferrari ferrari = new Ferrari(230);
+		Civic civic = new Civic();
+		Ferrari ferrari = new Ferrari();
+		
 		
 		civic.acelerar();
 		civic.acelerar();
 		civic.acelerar();
+		civic.Freiar();
+		civic.Freiar();
+		civic.Freiar();
+		civic.Freiar();
+		civic.Freiar();
+		civic.Freiar();
 		civic.acelerar();
-		civic.Freiar();
-		civic.Freiar();
-		civic.Freiar();
-		civic.Freiar();
-		civic.Freiar();
-		civic.Freiar();
 		
 		
 		ferrari.acelerar();
