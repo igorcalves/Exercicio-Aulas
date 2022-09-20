@@ -24,6 +24,8 @@ class Map {
   	marcas.stream()
       	.map(Utilitarios.maiscula)
       	.map(primeiraLetra)
+      	
+      	
       	.map(Utilitarios::grito)
       	.forEach(print);
   
