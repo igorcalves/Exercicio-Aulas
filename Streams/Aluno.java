@@ -7,7 +7,7 @@ class Aluno {
         final Boolean bomComportamento;
 
 
-		@Test
+		
         public Aluno(String nome, Double nota) {
           this(nome, nota, true);
         }
