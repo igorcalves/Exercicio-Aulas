@@ -1,14 +1,13 @@
 package Streams;
 
 import java.util.Objects;
-
 class Aluno {
         final String nome;
         final Double nota;
         final Boolean bomComportamento;
 
 
-
+		@Test
         public Aluno(String nome, Double nota) {
           this(nome, nota, true);
         }
