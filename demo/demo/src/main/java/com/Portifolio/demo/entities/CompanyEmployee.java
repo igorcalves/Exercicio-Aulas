@@ -5,17 +5,20 @@ import java.util.Date;
 
 public class CompanyEmployee {
 
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
     String name;
 
-    Date birthDate;
+    Date birthDate = new Date();
 
     String cpf;
 
     String email;
 
-    JobFunction jobFunction;;
+    JobFunction jobFunction = new JobFunction();
 
-    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    Company company;
+
 
     public CompanyEmployee(String name, Date birthDate, String cpf, String email, JobFunction jobFunction) {
         this.name = name;
@@ -63,7 +66,12 @@ public class CompanyEmployee {
 
     public void setJobFunction(JobFunction jobFunction) {
         this.jobFunction = jobFunction;
-    } 
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
 
     
     

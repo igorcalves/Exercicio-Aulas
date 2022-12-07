@@ -1,28 +1,32 @@
 package com.Portifolio.demo.entities;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class JobFunction {
 
+    public JobFunction(){}
     String jobFunctionName;
 
     Double salary;
 
-    Date admissionDate;
+    Company company;
 
-    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 
     List<CompanyEmployee> compannyEmployees = new ArrayList<>();
 
     
 
-    public JobFunction(String jobFunctionName, Double salary, Date admissionDate) {
+    public JobFunction(String jobFunctionName, Double salary) {
         this.jobFunctionName = jobFunctionName;
         this.salary = salary;
-        this.admissionDate = admissionDate;
     }
 
     public String getJobFunctionName() {
@@ -41,13 +45,7 @@ public class JobFunction {
         this.salary = salary;
     }
 
-    public Date getAdmissionDate() {
-        return admissionDate;
-    }
 
-    public void setAdmissionDate(Date admissionDate) {
-        this.admissionDate = admissionDate;
-    }
 
     
 

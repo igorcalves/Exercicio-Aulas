@@ -6,26 +6,30 @@ import java.util.List;
 
 public class Company {
     
-    String companyName;
+    final String companyName = "AllSafe";
 
-    Date companyDateCreate;
+    Date companyDateCreate; 
 
-    List<JobFunction> companyJobFunctions = new ArrayList<>();
+    private List<JobFunction> companyJobFunctions = new ArrayList<>();
 
-    List<CompanyEmployee> companyEmployees = new ArrayList<>();
+    private List<CompanyEmployee> companyEmployees = new ArrayList<>(); 
 
-    public Company(String companyName, Date companyDateCreate) {
-        this.companyName = companyName;
-        this.companyDateCreate = companyDateCreate;
+
+    public  List<JobFunction> getCompanyJobFunctions() {
+        return companyJobFunctions;
     }
+
+
+    public  List<CompanyEmployee> getCompanyEmployees() {
+        return companyEmployees;
+    }
+
 
     public String getCompanyName() {
         return companyName;
     }
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
+  
 
     public Date getCompanyDateCreate() {
         return companyDateCreate;
