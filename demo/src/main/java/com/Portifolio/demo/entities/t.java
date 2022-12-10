@@ -8,7 +8,13 @@ public class t {
 
       CD company = new CD();
 
-      company.data();
+      for (int i = 0; i < 10; i++) {
+        company.cdata();
+      }
+
+      
+
+      company.showall();
 
     }
     
